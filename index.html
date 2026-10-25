@@ -97,6 +97,12 @@ html[data-lang="fa"] .edu h3{font-family:var(--body)}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3vw,30px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(18px,4vw,48px);transition:border-color .2s,transform .2s}
 .card:hover{border-color:var(--accent);transform:translateY(-3px)}
 @media (max-width:760px){.card{grid-template-columns:1fr}}
+.card{position:relative}
+.stretch{text-decoration:none;color:inherit}
+.stretch::after{content:"";position:absolute;inset:0;border-radius:14px;cursor:pointer}
+.stretch:hover{color:var(--accent)}
+.visit{margin-top:14px;font-size:13px;color:var(--accent);direction:ltr;unicode-bidi:plaintext}
+html[data-lang="fa"] .visit{text-align:right}
 .card h3{font-family:var(--display);font-size:clamp(22px,3vw,28px);line-height:1.3;margin:6px 0 10px}
 html[data-lang="fa"] .card h3{font-family:var(--body);font-weight:700}
 .meta{font-size:12px;color:var(--gold)}
@@ -181,8 +187,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="sh"><h2><span class="fa">خلاصه رزومه</span><span class="en">Profile</span></h2><span class="mono">01 / profile</span></div>
       <div class="split">
         <div>
-          <p class="fa">دانشجوی مهندسی کامپیوتر دانشگاه کاشان با تجربه عملی در توسعه نرم‌افزار و برنامه‌نویسی پروژه‌محور. دارای تجربه در زبان‌های Java، Python و C و توسعه وب با HTML، CSS و JavaScript. توسعه یک اپلیکیشن وب تعاملی شخصی متصل به ربات تلگرام، با کار بر روی API، JSON، تعامل‌های سمت کاربر و مدیریت داده. در حال حاضر مشغول گسترش دانش خود در زمینه Python، یادگیری ماشین و توسعه بک‌اند.</p>
-          <p class="en">Computer Engineering student at the University of Kashan with hands-on experience in software development and project-based programming. Experienced with Java, Python, C, and web development using HTML, CSS, and JavaScript. Developed a personal interactive web application integrated with a Telegram Bot, working with APIs, JSON, client-side interactions, and data management. Currently expanding knowledge of Python, Machine Learning, and backend development.</p>
+          <p class="fa">دانشجوی مهندسی کامپیوتر دانشگاه کاشان با تجربه عملی در توسعه نرم‌افزار و برنامه‌نویسی پروژه‌محور. دارای تجربه در زبان‌های Java، Python و C و توسعه وب با HTML، CSS و JavaScript. توسعه یک اپلیکیشن وب پیشرو (PWA) تعاملی و قابل نصب، متصل به ربات تلگرام و دارای چت‌بات و پیشنهاد هوشمند مبتنی بر هوش مصنوعی، با کار بر روی API، JSON، تعامل‌های سمت کاربر و مدیریت داده. در حال حاضر مشغول گسترش دانش خود در زمینه Python، یادگیری ماشین و توسعه بک‌اند.</p>
+          <p class="en">Computer Engineering student at the University of Kashan with hands-on experience in software development and project-based programming. Experienced with Java, Python, C, and web development using HTML, CSS, and JavaScript. Developed an interactive, installable Progressive Web App (PWA) integrated with a Telegram Bot and featuring an AI chatbot and smart recommendations, working with APIs, JSON, client-side interactions, and data management. Currently expanding knowledge of Python, Machine Learning, and backend development.</p>
         </div>
         <div>
           <div class="edu">
@@ -205,21 +211,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
         <article class="card">
           <div>
-            <div class="meta mono"><span class="fa">اپلیکیشن وب شخصی</span><span class="en">PERSONAL WEB APPLICATION</span></div>
-            <h3>Lovora / Elysium Universe</h3>
-            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">JSON</span><span class="chip">Telegram Bot</span><span class="chip">Git / GitHub</span></div>
+            <div class="meta mono"><span class="fa">اپلیکیشن وب پیشرو (PWA) · پروژه شخصی</span><span class="en">PROGRESSIVE WEB APP (PWA) · PERSONAL PROJECT</span></div>
+            <h3><a class="stretch" href="https://elysium-uni.netlify.app" target="_blank" rel="noopener">Elysium Universe</a></h3>
+            <div class="chips"><span class="chip">PWA</span><span class="chip">AI Chatbot</span><span class="chip">Smart Recommendations</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">JSON</span><span class="chip">Telegram Bot</span><span class="chip">Git / GitHub</span></div>
+            <div class="visit mono">elysium-uni.netlify.app ↗</div>
           </div>
           <ul class="fa">
-            <li>توسعه یک اپلیکیشن وب شخصی و تعاملی با چندین بخش و قابلیت مستقل.</li>
+            <li>توسعه یک اپلیکیشن وب پیشرو (PWA) تعاملی با چندین بخش و قابلیت مستقل، قابل نصب روی دستگاه کاربر و قابل استفاده مانند یک اپلیکیشن بومی.</li>
             <li>پیاده‌سازی احراز هویت کاربر، مدیریت پروفایل، نامه‌ها، خاطرات، موسیقی، رویدادها، شمارنده‌های معکوس و محتوای تعاملی.</li>
             <li>ایجاد تعامل‌های پویا سمت کاربر، استفاده از Local Storage، ارسال درخواست‌های API و به‌روزرسانی رابط کاربری با JavaScript.</li>
             <li>یکپارچه‌سازی برنامه با ربات تلگرام و کار با داده‌های مبتنی بر JSON و ارتباط از طریق API.</li>
+            <li>افزودن قابلیت‌های هوش مصنوعی (AI) شامل چت‌بات و سیستم پیشنهاد هوشمند به اپلیکیشن.</li>
           </ul>
           <ul class="en">
-            <li>Developed an interactive personal web application with multiple independent sections and features.</li>
+            <li>Developed an interactive Progressive Web App (PWA) with multiple independent sections and features, installable on the user's device and usable like a native application.</li>
             <li>Implemented user authentication, profile management, letters, memories, music, events, countdowns, and interactive content.</li>
             <li>Built dynamic client-side interactions, local storage usage, API requests, and UI updates with JavaScript.</li>
             <li>Integrated the application with a Telegram Bot and worked with JSON-based data and API communication.</li>
+            <li>Added artificial intelligence (AI) capabilities to the application, including a chatbot and smart recommendations.</li>
           </ul>
         </article>
 
@@ -275,7 +284,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div class="grp"><h3><span class="fa">مفاهیم</span><span class="en">Concepts</span></h3>
           <div class="chips"><span class="chip fa" style="direction:rtl">برنامه‌نویسی شی‌گرا (OOP)</span><span class="chip en">Object-Oriented Programming (OOP)</span><span class="chip fa" style="direction:rtl">حل مسئله</span><span class="chip en">Problem solving</span><span class="chip fa" style="direction:rtl">الگوریتم</span><span class="chip en">Algorithms</span><span class="chip fa" style="direction:rtl">ساختمان داده</span><span class="chip en">Data structures</span></div></div>
         <div class="grp"><h3><span class="fa">ابزارها</span><span class="en">Tools</span></h3>
-          <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">JSON</span><span class="chip">API Integration</span><span class="chip">Telegram Bot</span></div></div>
+          <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">JSON</span><span class="chip">API Integration</span><span class="chip">Telegram Bot</span><span class="chip">AI Integration</span></div></div>
         <div class="grp"><h3><span class="fa">دوره‌ها</span><span class="en">Courses</span></h3>
           <div class="row"><span class="fa">دوره جامع Python، جادی، مکتب‌خونه</span><span class="en">Comprehensive Python Course, Jadi, Maktabkhooneh</span><span class="fa">تکمیل‌شده</span><span class="en">Completed</span></div>
           <div class="row"><span class="fa">یادگیری ماشین با Python، جادی، مکتب‌خونه</span><span class="en">Machine Learning with Python, Jadi, Maktabkhooneh</span><span class="fa">در حال انجام</span><span class="en">In Progress</span></div>
