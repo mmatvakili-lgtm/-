@@ -1,379 +1,1353 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Matin Vakili</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;700;800&display=swap">
-<meta name="description" content="Mohammad Matin Vakili, Computer Engineering Student | Software Development">
-<style>
-:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
-/* Layout: one column, hero over a live girih-star lattice (Kashan tilework), then ruled sections with a sticky bilingual nav. */
-:root{
-  --bg:#f2f5f3; --surface:#ffffff; --fg:#0f1a2e; --muted:#566379; --line:#d5ddd9;
-  --accent:#067a82; --accent-ink:#ffffff; --tile:#067a82; --gold:#b9771f; --chip:#e4ece9;
-  --display:'Bricolage Grotesque','Vazirmatn',system-ui,sans-serif;
-  --body:'Vazirmatn','Bricolage Grotesque',system-ui,sans-serif;
-  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
-  --gutter:clamp(16px,5vw,48px);
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0a1127; --surface:#111b38; --fg:#e8edf7; --muted:#9aa7c2; --line:#223056;
-  --accent:#3fd0c9; --accent-ink:#06222a; --tile:#3fd0c9; --gold:#e3a652; --chip:#18254a; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0a1127; --surface:#111b38; --fg:#e8edf7; --muted:#9aa7c2; --line:#223056;
-  --accent:#3fd0c9; --accent-ink:#06222a; --tile:#3fd0c9; --gold:#e3a652; --chip:#18254a; color-scheme:dark}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Matin Vakili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;700;800&display=swap"
+    />
+    <meta
+      name="description"
+      content="Mohammad Matin Vakili, Computer Engineering Student | Software Development"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      /* Layout: one column, hero over a live girih-star lattice (Kashan tilework), then ruled sections with a sticky bilingual nav. */
+      :root {
+        --bg: #f2f5f3;
+        --surface: #ffffff;
+        --fg: #0f1a2e;
+        --muted: #566379;
+        --line: #d5ddd9;
+        --accent: #067a82;
+        --accent-ink: #ffffff;
+        --tile: #067a82;
+        --gold: #b9771f;
+        --chip: #e4ece9;
+        --display: "Bricolage Grotesque", "Vazirmatn", system-ui, sans-serif;
+        --body: "Vazirmatn", "Bricolage Grotesque", system-ui, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+        --gutter: clamp(16px, 5vw, 48px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0a1127;
+          --surface: #111b38;
+          --fg: #e8edf7;
+          --muted: #9aa7c2;
+          --line: #223056;
+          --accent: #3fd0c9;
+          --accent-ink: #06222a;
+          --tile: #3fd0c9;
+          --gold: #e3a652;
+          --chip: #18254a;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0a1127;
+        --surface: #111b38;
+        --fg: #e8edf7;
+        --muted: #9aa7c2;
+        --line: #223056;
+        --accent: #3fd0c9;
+        --accent-ink: #06222a;
+        --tile: #3fd0c9;
+        --gold: #e3a652;
+        --chip: #18254a;
+        color-scheme: dark;
+      }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.8;padding-inline:0;overflow-x:hidden}
-html[data-lang="en"] body{line-height:1.65}
-html[data-lang="fa"] .en,html[data-lang="en"] .fa{display:none!important}
-a{color:inherit}
-.wrap{max-width:1080px;margin-inline:auto;padding-inline:var(--gutter)}
-.mono{font-family:var(--mono);letter-spacing:.02em}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.8;
+        padding-inline: 0;
+        overflow-x: hidden;
+      }
+      html[data-lang="en"] body {
+        line-height: 1.65;
+      }
+      html[data-lang="fa"] .en,
+      html[data-lang="en"] .fa {
+        display: none !important;
+      }
+      a {
+        color: inherit;
+      }
+      .wrap {
+        max-width: 1080px;
+        margin-inline: auto;
+        padding-inline: var(--gutter);
+      }
+      .mono {
+        font-family: var(--mono);
+        letter-spacing: 0.02em;
+      }
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
 
-/* nav */
-.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;gap:16px;min-height:56px}
-.brand{font-family:var(--display);font-weight:800;text-decoration:none;display:flex;align-items:center;gap:10px}
-.brand i{width:26px;height:26px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-style:normal;font-size:12px;border-radius:6px;font-family:var(--mono)}
-.links{display:flex;gap:4px;margin-inline-start:auto;flex-wrap:wrap}
-.links a{font-size:14px;text-decoration:none;color:var(--muted);padding:4px 10px;border-radius:99px}
-.links a:hover{color:var(--fg);background:var(--chip)}
-.tools{display:flex;gap:6px}
-.tools button{font:inherit;font-size:13px;min-width:38px;height:34px;padding:0 10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;cursor:pointer}
-.tools button:hover{border-color:var(--accent)}
-@media (max-width:760px){.links{display:none}.tools{margin-inline-start:auto}}
+      /* nav */
+      .nav {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        z-index: 20;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav .wrap {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-height: 56px;
+      }
+      .brand {
+        font-family: var(--display);
+        font-weight: 800;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .brand i {
+        width: 26px;
+        height: 26px;
+        display: grid;
+        place-items: center;
+        background: var(--accent);
+        color: var(--accent-ink);
+        font-style: normal;
+        font-size: 12px;
+        border-radius: 6px;
+        font-family: var(--mono);
+      }
+      .links {
+        display: flex;
+        gap: 4px;
+        margin-inline-start: auto;
+        flex-wrap: wrap;
+      }
+      .links a {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--muted);
+        padding: 4px 10px;
+        border-radius: 99px;
+      }
+      .links a:hover {
+        color: var(--fg);
+        background: var(--chip);
+      }
+      .tools {
+        display: flex;
+        gap: 6px;
+      }
+      .tools button {
+        font: inherit;
+        font-size: 13px;
+        min-width: 38px;
+        height: 34px;
+        padding: 0 10px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--fg);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .tools button:hover {
+        border-color: var(--accent);
+      }
+      @media (max-width: 760px) {
+        .links {
+          display: none;
+        }
+        .tools {
+          margin-inline-start: auto;
+        }
+      }
 
-/* hero */
-.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
-.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero .wrap{position:relative;padding-block:clamp(56px,10vw,120px) clamp(48px,8vw,96px)}
-.kicker{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:4px 12px;border-radius:99px}
-.kicker b{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
-@keyframes pulse{50%{opacity:.35}}
-h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,9vw,104px);line-height:1.05;margin:22px 0 14px;letter-spacing:-.02em;text-wrap:balance}
-html[data-lang="fa"] h1{line-height:1.3;letter-spacing:0}
-h1 em{font-style:normal;color:var(--accent)}
-.lead{max-width:60ch;font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0 0 28px}
-.cta{display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:500;text-decoration:none;padding:10px 20px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
-.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.btn:hover{transform:translateY(-2px)}
-.btn{transition:transform .2s}
-.facts{display:flex;gap:clamp(20px,5vw,56px);flex-wrap:wrap;margin-top:44px;padding-top:22px;border-top:1px solid var(--line)}
-.facts div{min-width:0}
-.facts strong{display:block;font-family:var(--display);font-size:30px;line-height:1.2}
-.facts span{font-size:13px;color:var(--muted)}
-.rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
-.rise:nth-child(2){animation-delay:.08s}.rise:nth-child(3){animation-delay:.16s}.rise:nth-child(4){animation-delay:.24s}.rise:nth-child(5){animation-delay:.32s}
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+      /* hero */
+      .hero {
+        position: relative;
+        border-bottom: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .hero canvas {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .hero .wrap {
+        position: relative;
+        padding-block: clamp(56px, 10vw, 120px) clamp(48px, 8vw, 96px);
+      }
+      .kicker {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 13px;
+        color: var(--accent);
+        border: 1px solid var(--line);
+        background: var(--surface);
+        padding: 4px 12px;
+        border-radius: 99px;
+      }
+      .kicker b {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        50% {
+          opacity: 0.35;
+        }
+      }
+      h1 {
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: clamp(40px, 9vw, 104px);
+        line-height: 1.05;
+        margin: 22px 0 14px;
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+      }
+      html[data-lang="fa"] h1 {
+        line-height: 1.3;
+        letter-spacing: 0;
+      }
+      h1 em {
+        font-style: normal;
+        color: var(--accent);
+      }
+      .lead {
+        max-width: 60ch;
+        font-size: clamp(17px, 2.2vw, 21px);
+        color: var(--muted);
+        margin: 0 0 28px;
+      }
+      .cta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font: inherit;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--fg);
+        cursor: pointer;
+      }
+      .btn.primary {
+        background: var(--accent);
+        color: var(--accent-ink);
+        border-color: var(--accent);
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn {
+        transition: transform 0.2s;
+      }
+      .facts {
+        display: flex;
+        gap: clamp(20px, 5vw, 56px);
+        flex-wrap: wrap;
+        margin-top: 44px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+      }
+      .facts div {
+        min-width: 0;
+      }
+      .facts strong {
+        display: block;
+        font-family: var(--display);
+        font-size: 30px;
+        line-height: 1.2;
+      }
+      .facts span {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .rise {
+        animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      .rise:nth-child(2) {
+        animation-delay: 0.08s;
+      }
+      .rise:nth-child(3) {
+        animation-delay: 0.16s;
+      }
+      .rise:nth-child(4) {
+        animation-delay: 0.24s;
+      }
+      .rise:nth-child(5) {
+        animation-delay: 0.32s;
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
 
-/* sections */
-section.s{padding-block:clamp(48px,8vw,88px);border-bottom:1px solid var(--line)}
-.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:32px}
-.sh h2{font-family:var(--display);font-size:clamp(26px,4vw,40px);line-height:1.3;margin:0;font-weight:800}
-.sh .mono{font-size:12px;color:var(--muted);margin-inline-start:auto}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px)}
-@media (max-width:760px){.split{grid-template-columns:1fr}}
-.split>*{min-width:0}
-p{margin:0 0 14px}
+      /* sections */
+      section.s {
+        padding-block: clamp(48px, 8vw, 88px);
+        border-bottom: 1px solid var(--line);
+      }
+      .sh {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .sh h2 {
+        font-family: var(--display);
+        font-size: clamp(26px, 4vw, 40px);
+        line-height: 1.3;
+        margin: 0;
+        font-weight: 800;
+      }
+      .sh .mono {
+        font-size: 12px;
+        color: var(--muted);
+        margin-inline-start: auto;
+      }
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(24px, 5vw, 64px);
+      }
+      @media (max-width: 760px) {
+        .split {
+          grid-template-columns: 1fr;
+        }
+      }
+      .split > * {
+        min-width: 0;
+      }
+      p {
+        margin: 0 0 14px;
+      }
 
-/* education */
-.edu{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.edu .yr{font-family:var(--mono);font-size:13px;color:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:2px 10px;white-space:nowrap}
-.edu h3{margin:0 0 2px;font-size:19px;font-family:var(--display)}
-html[data-lang="fa"] .edu h3{font-family:var(--body)}
-.edu p{margin:0;color:var(--muted)}
-.prog{margin-top:14px;height:6px;border-radius:9px;background:var(--chip);overflow:hidden}
-.prog i{display:block;height:100%;width:30%;background:var(--accent);border-radius:9px}
+      /* education */
+      .edu {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 18px;
+        align-items: start;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 22px;
+      }
+      .edu .yr {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        padding: 2px 10px;
+        white-space: nowrap;
+      }
+      .edu h3 {
+        margin: 0 0 2px;
+        font-size: 19px;
+        font-family: var(--display);
+      }
+      html[data-lang="fa"] .edu h3 {
+        font-family: var(--body);
+      }
+      .edu p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .prog {
+        margin-top: 14px;
+        height: 6px;
+        border-radius: 9px;
+        background: var(--chip);
+        overflow: hidden;
+      }
+      .prog i {
+        display: block;
+        height: 100%;
+        width: 30%;
+        background: var(--accent);
+        border-radius: 9px;
+      }
 
-/* projects */
-.proj{display:grid;gap:18px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3vw,30px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(18px,4vw,48px);transition:border-color .2s,transform .2s}
-.card:hover{border-color:var(--accent);transform:translateY(-3px)}
-@media (max-width:760px){.card{grid-template-columns:1fr}}
-.card{position:relative}
-.stretch{text-decoration:none;color:inherit}
-.stretch::after{content:"";position:absolute;inset:0;border-radius:14px;cursor:pointer}
-.stretch:hover{color:var(--accent)}
-.visit{margin-top:14px;font-size:13px;color:var(--accent);direction:ltr;unicode-bidi:plaintext}
-html[data-lang="fa"] .visit{text-align:right}
-.card h3{font-family:var(--display);font-size:clamp(22px,3vw,28px);line-height:1.3;margin:6px 0 10px}
-html[data-lang="fa"] .card h3{font-family:var(--body);font-weight:700}
-.meta{font-size:12px;color:var(--gold)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.chip{font-family:var(--mono);font-size:12px;background:var(--chip);color:var(--fg);padding:3px 10px;border-radius:99px;direction:ltr}
-.card ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.card li{position:relative;padding-inline-start:22px;color:var(--muted);font-size:15px}
-.card li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:9px;height:9px;background:var(--accent);transform:rotate(45deg)}
-.badge{display:inline-block;font-size:12px;background:var(--accent);color:var(--accent-ink);padding:1px 10px;border-radius:99px;margin-inline-start:8px;vertical-align:middle}
+      /* projects */
+      .proj {
+        display: grid;
+        gap: 18px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: clamp(18px, 3vw, 30px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+        gap: clamp(18px, 4vw, 48px);
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+      .card:hover {
+        border-color: var(--accent);
+        transform: translateY(-3px);
+      }
+      @media (max-width: 760px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        position: relative;
+      }
+      .stretch {
+        text-decoration: none;
+        color: inherit;
+      }
+      .stretch::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 14px;
+        cursor: pointer;
+      }
+      .stretch:hover {
+        color: var(--accent);
+      }
+      .visit {
+        margin-top: 14px;
+        font-size: 13px;
+        color: var(--accent);
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+      html[data-lang="fa"] .visit {
+        text-align: right;
+      }
+      .card h3 {
+        font-family: var(--display);
+        font-size: clamp(22px, 3vw, 28px);
+        line-height: 1.3;
+        margin: 6px 0 10px;
+      }
+      html[data-lang="fa"] .card h3 {
+        font-family: var(--body);
+        font-weight: 700;
+      }
+      .meta {
+        font-size: 12px;
+        color: var(--gold);
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 12px;
+      }
+      .chip {
+        font-family: var(--mono);
+        font-size: 12px;
+        background: var(--chip);
+        color: var(--fg);
+        padding: 3px 10px;
+        border-radius: 99px;
+        direction: ltr;
+      }
+      .card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .card li {
+        position: relative;
+        padding-inline-start: 22px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .card li::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        top: 0.7em;
+        width: 9px;
+        height: 9px;
+        background: var(--accent);
+        transform: rotate(45deg);
+      }
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        background: var(--accent);
+        color: var(--accent-ink);
+        padding: 1px 10px;
+        border-radius: 99px;
+        margin-inline-start: 8px;
+        vertical-align: middle;
+      }
 
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-@media (max-width:760px){.skills{grid-template-columns:1fr}}
-.grp{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.grp h3{margin:0 0 4px;font-size:13px;font-family:var(--mono);color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.08em}
-.grp .chips{margin-top:10px}
-.grp .chip{font-size:14px;padding:5px 14px}
-.lvl{display:flex;gap:4px;margin-top:8px}
-.lvl i{width:22px;height:6px;border-radius:3px;background:var(--chip)}
-.lvl i.on{background:var(--accent)}
-.row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-block:10px;border-bottom:1px dashed var(--line)}
-.row:last-child{border:0}
-.row span:last-child{color:var(--muted);font-size:14px;text-align:end}
+      /* skills */
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      @media (max-width: 760px) {
+        .skills {
+          grid-template-columns: 1fr;
+        }
+      }
+      .grp {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 22px;
+      }
+      .grp h3 {
+        margin: 0 0 4px;
+        font-size: 13px;
+        font-family: var(--mono);
+        color: var(--muted);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .grp .chips {
+        margin-top: 10px;
+      }
+      .grp .chip {
+        font-size: 14px;
+        padding: 5px 14px;
+      }
+      .lvl {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+      }
+      .lvl i {
+        width: 22px;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--chip);
+      }
+      .lvl i.on {
+        background: var(--accent);
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        padding-block: 10px;
+        border-bottom: 1px dashed var(--line);
+      }
+      .row:last-child {
+        border: 0;
+      }
+      .row span:last-child {
+        color: var(--muted);
+        font-size: 14px;
+        text-align: end;
+      }
 
-/* contact */
-.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px}
-.ct{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
-.ct small{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}
-.ct a,.ct span.v{font-family:var(--mono);font-size:14px;overflow-wrap:anywhere;direction:ltr;unicode-bidi:plaintext;display:block}
-.ct button{margin-top:10px;font:inherit;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:8px;padding:4px 12px;cursor:pointer}
-.ct button:hover{border-color:var(--accent);color:var(--accent)}
-footer{padding-block:28px;font-size:13px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style>
-</head>
-<body>
-
-
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top"><i>MV</i><span class="fa">متین وکیلی</span><span class="en">Matin Vakili</span></a>
-    <nav class="links" aria-label="sections">
-      <a href="#about"><span class="fa">خلاصه</span><span class="en">Profile</span></a>
-      <a href="#projects"><span class="fa">پروژه‌ها</span><span class="en">Projects</span></a>
-      <a href="#skills"><span class="fa">مهارت‌ها</span><span class="en">Skills</span></a>
-      <a href="#contact"><span class="fa">تماس</span><span class="en">Contact</span></a>
-    </nav>
-    <div class="tools">
-      <button id="lang" type="button" aria-label="Language"><span class="fa">EN</span><span class="en">فارسی</span></button>
-      <button id="theme" type="button" aria-label="Theme">◐</button>
-    </div>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <canvas id="lattice" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <span class="kicker mono rise"><b></b><span class="fa">دانشجوی مهندسی کامپیوتر | توسعه نرم‌افزار</span><span class="en">Computer Engineering Student | Software Development</span></span>
-      <h1 class="rise"><span class="fa">محمد متین <em>وکیلی</em></span><span class="en">Mohammad Matin <em>Vakili</em></span></h1>
-      <p class="lead rise">
-        <span class="fa">توسعه نرم‌افزار و برنامه‌نویسی پروژه‌محور با Java، Python، C و فناوری‌های وب، دانشگاه کاشان.</span>
-        <span class="en">Software development and project-based programming with Java, Python, C and web technologies, University of Kashan.</span>
-      </p>
-      <div class="cta rise">
-        <a class="btn primary" href="#projects"><span class="fa">مشاهده پروژه‌ها</span><span class="en">View Projects</span></a>
-        <a class="btn" href="https://github.com/mmatvakili-lgtm" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="#contact"><span class="fa">اطلاعات تماس</span><span class="en">Contact</span></a>
-      </div>
-      <div class="facts rise">
-        <div><strong class="fa">۳</strong><strong class="en">3</strong><span class="fa">پروژه</span><span class="en">Projects</span></div>
-        <div><strong class="fa">۴</strong><strong class="en">4</strong><span class="fa">زبان برنامه‌نویسی</span><span class="en">Programming languages</span></div>
-        <div><strong class="fa">۲۰۲۴</strong><strong class="en">2024</strong><span class="fa">آغاز تحصیل در دانشگاه کاشان</span><span class="en">B.Sc. start, University of Kashan</span></div>
-        <div><strong class="mono" style="font-size:22px;line-height:2">ML</strong><span class="fa">دوره یادگیری ماشین (در حال انجام)</span><span class="en">Machine Learning course (in progress)</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="s" id="about">
-    <div class="wrap">
-      <div class="sh"><h2><span class="fa">خلاصه رزومه</span><span class="en">Profile</span></h2><span class="mono">01 / profile</span></div>
-      <div class="split">
-        <div>
-          <p class="fa">دانشجوی مهندسی کامپیوتر دانشگاه کاشان با تجربه عملی در توسعه نرم‌افزار و برنامه‌نویسی پروژه‌محور. دارای تجربه در زبان‌های Java، Python و C و توسعه وب با HTML، CSS و JavaScript. توسعه یک اپلیکیشن وب پیشرو (PWA) تعاملی و قابل نصب، متصل به ربات تلگرام و دارای چت‌بات و پیشنهاد هوشمند مبتنی بر هوش مصنوعی، با کار بر روی API، JSON، تعامل‌های سمت کاربر و مدیریت داده. در حال حاضر مشغول گسترش دانش خود در زمینه Python، یادگیری ماشین و توسعه بک‌اند.</p>
-          <p class="en">Computer Engineering student at the University of Kashan with hands-on experience in software development and project-based programming. Experienced with Java, Python, C, and web development using HTML, CSS, and JavaScript. Developed an interactive, installable Progressive Web App (PWA) integrated with a Telegram Bot and featuring an AI chatbot and smart recommendations, working with APIs, JSON, client-side interactions, and data management. Currently expanding knowledge of Python, Machine Learning, and backend development.</p>
+      /* contact */
+      .contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+        gap: 14px;
+      }
+      .ct {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px;
+        min-width: 0;
+      }
+      .ct small {
+        display: block;
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .ct a,
+      .ct span.v {
+        font-family: var(--mono);
+        font-size: 14px;
+        overflow-wrap: anywhere;
+        direction: ltr;
+        unicode-bidi: plaintext;
+        display: block;
+      }
+      .ct button {
+        margin-top: 10px;
+        font: inherit;
+        font-size: 13px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--fg);
+        border-radius: 8px;
+        padding: 4px 12px;
+        cursor: pointer;
+      }
+      .ct button:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      footer {
+        padding-block: 28px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap">
+        <a class="brand" href="#top"
+          ><i>MV</i><span class="fa">متین وکیلی</span
+          ><span class="en">Matin Vakili</span></a
+        >
+        <nav class="links" aria-label="sections">
+          <a href="#about"
+            ><span class="fa">خلاصه</span><span class="en">Profile</span></a
+          >
+          <a href="#projects"
+            ><span class="fa">پروژه‌ها</span><span class="en">Projects</span></a
+          >
+          <a href="#skills"
+            ><span class="fa">مهارت‌ها</span><span class="en">Skills</span></a
+          >
+          <a href="#contact"
+            ><span class="fa">تماس</span><span class="en">Contact</span></a
+          >
+        </nav>
+        <div class="tools">
+          <button id="lang" type="button" aria-label="Language">
+            <span class="fa">EN</span><span class="en">فارسی</span>
+          </button>
+          <button id="theme" type="button" aria-label="Theme">◐</button>
         </div>
-        <div>
-          <div class="edu">
-            <span class="yr">2024 →</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas id="lattice" aria-hidden="true"></canvas>
+        <div class="wrap">
+          <span class="kicker mono rise"
+            ><b></b
+            ><span class="fa">دانشجوی مهندسی کامپیوتر | توسعه نرم‌افزار</span
+            ><span class="en"
+              >Computer Engineering Student | Software Development</span
+            ></span
+          >
+          <h1 class="rise">
+            <span class="fa">محمد متین <em>وکیلی</em></span
+            ><span class="en">Mohammad Matin <em>Vakili</em></span>
+          </h1>
+          <p class="lead rise">
+            <span class="fa"
+              >توسعه نرم‌افزار و برنامه‌نویسی پروژه‌محور با Java، Python، C و
+              فناوری‌های وب، دانشگاه کاشان.</span
+            >
+            <span class="en"
+              >Software development and project-based programming with Java,
+              Python, C and web technologies, University of Kashan.</span
+            >
+          </p>
+          <div class="cta rise">
+            <a class="btn primary" href="#projects"
+              ><span class="fa">مشاهده پروژه‌ها</span
+              ><span class="en">View Projects</span></a
+            >
+            <a
+              class="btn"
+              href="https://github.com/mmatvakili-lgtm"
+              target="_blank"
+              rel="noopener"
+              >GitHub ↗</a
+            >
+            <a class="btn" href="#contact"
+              ><span class="fa">اطلاعات تماس</span
+              ><span class="en">Contact</span></a
+            >
+          </div>
+          <div class="facts rise">
             <div>
-              <h3><span class="fa">کارشناسی مهندسی کامپیوتر</span><span class="en">B.Sc. Computer Engineering</span></h3>
-              <p><span class="fa">دانشگاه کاشان، کاشان، اصفهان، ایران · اکتبر ۲۰۲۴ تاکنون</span><span class="en">University of Kashan, Kashan, Isfahan, Iran · October 2024 – Present</span></p>
-              <div class="prog" role="img" aria-label="in progress"><i></i></div>
+              <strong class="fa">۳</strong><strong class="en">3</strong
+              ><span class="fa">پروژه</span><span class="en">Projects</span>
+            </div>
+            <div>
+              <strong class="fa">۴</strong><strong class="en">4</strong
+              ><span class="fa">زبان برنامه‌نویسی</span
+              ><span class="en">Programming languages</span>
+            </div>
+            <div>
+              <strong class="fa">۲۰۲۴</strong><strong class="en">2024</strong
+              ><span class="fa">آغاز تحصیل در دانشگاه کاشان</span
+              ><span class="en">B.Sc. start, University of Kashan</span>
+            </div>
+            <div>
+              <strong class="mono" style="font-size: 22px; line-height: 2"
+                >ML</strong
+              ><span class="fa">دوره یادگیری ماشین (در حال انجام)</span
+              ><span class="en">Machine Learning course (in progress)</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="s" id="projects">
-    <div class="wrap">
-      <div class="sh"><h2><span class="fa">پروژه‌ها</span><span class="en">Projects</span></h2><span class="mono">02 / work</span></div>
-      <div class="proj">
-
-        <article class="card">
-          <div>
-            <div class="meta mono"><span class="fa">اپلیکیشن وب پیشرو (PWA) · پروژه شخصی</span><span class="en">PROGRESSIVE WEB APP (PWA) · PERSONAL PROJECT</span></div>
-            <h3><a class="stretch" href="https://elysium-uni.netlify.app" target="_blank" rel="noopener">Elysium Universe</a></h3>
-            <div class="chips"><span class="chip">PWA</span><span class="chip">AI Chatbot</span><span class="chip">Smart Recommendations</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">JSON</span><span class="chip">Telegram Bot</span><span class="chip">Git / GitHub</span></div>
-            <div class="visit mono">elysium-uni.netlify.app ↗</div>
+      <section class="s" id="about">
+        <div class="wrap">
+          <div class="sh">
+            <h2>
+              <span class="fa">خلاصه رزومه</span><span class="en">Profile</span>
+            </h2>
+            <span class="mono">01 / profile</span>
           </div>
-          <ul class="fa">
-            <li>توسعه یک اپلیکیشن وب پیشرو (PWA) تعاملی با چندین بخش و قابلیت مستقل، قابل نصب روی دستگاه کاربر و قابل استفاده مانند یک اپلیکیشن بومی.</li>
-            <li>پیاده‌سازی احراز هویت کاربر، مدیریت پروفایل، نامه‌ها، خاطرات، موسیقی، رویدادها، شمارنده‌های معکوس و محتوای تعاملی.</li>
-            <li>ایجاد تعامل‌های پویا سمت کاربر، استفاده از Local Storage، ارسال درخواست‌های API و به‌روزرسانی رابط کاربری با JavaScript.</li>
-            <li>یکپارچه‌سازی برنامه با ربات تلگرام و کار با داده‌های مبتنی بر JSON و ارتباط از طریق API.</li>
-            <li>افزودن قابلیت‌های هوش مصنوعی (AI) شامل چت‌بات و سیستم پیشنهاد هوشمند به اپلیکیشن.</li>
-          </ul>
-          <ul class="en">
-            <li>Developed an interactive Progressive Web App (PWA) with multiple independent sections and features, installable on the user's device and usable like a native application.</li>
-            <li>Implemented user authentication, profile management, letters, memories, music, events, countdowns, and interactive content.</li>
-            <li>Built dynamic client-side interactions, local storage usage, API requests, and UI updates with JavaScript.</li>
-            <li>Integrated the application with a Telegram Bot and worked with JSON-based data and API communication.</li>
-            <li>Added artificial intelligence (AI) capabilities to the application, including a chatbot and smart recommendations.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <div>
-            <div class="meta mono"><span class="fa">پروژه دانشگاهی · سپتامبر ۲۰۲۵</span><span class="en">UNIVERSITY PROJECT · SEPTEMBER 2025</span></div>
-            <h3><span class="fa">بازی استراتژیک Game of Thrones</span><span class="en">Game of Thrones Strategy Game</span></h3>
-            <div class="chips"><span class="chip">Java</span><span class="chip">OOP</span></div>
+          <div class="split">
+            <div>
+              <p class="fa">
+                دانشجوی مهندسی کامپیوتر دانشگاه کاشان با تجربه عملی در توسعه
+                نرم‌افزار و برنامه‌نویسی پروژه‌محور. دارای تجربه در زبان‌های
+                Java، Python و C و توسعه وب با HTML، CSS و JavaScript. توسعه یک
+                اپلیکیشن وب پیشرو (PWA) تعاملی و قابل نصب، متصل به ربات تلگرام و
+                دارای چت‌بات و پیشنهاد هوشمند مبتنی بر هوش مصنوعی، با کار بر روی
+                API، JSON، تعامل‌های سمت کاربر و مدیریت داده. در حال حاضر مشغول
+                گسترش دانش خود در زمینه Python، یادگیری ماشین و توسعه بک‌اند.
+              </p>
+              <p class="en">
+                Computer Engineering student at the University of Kashan with
+                hands-on experience in software development and project-based
+                programming. Experienced with Java, Python, C, and web
+                development using HTML, CSS, and JavaScript. Developed an
+                interactive, installable Progressive Web App (PWA) integrated
+                with a Telegram Bot and featuring an AI chatbot and smart
+                recommendations, working with APIs, JSON, client-side
+                interactions, and data management. Currently expanding knowledge
+                of Python, Machine Learning, and backend development.
+              </p>
+            </div>
+            <div>
+              <div class="edu">
+                <span class="yr">2024 →</span>
+                <div>
+                  <h3>
+                    <span class="fa">کارشناسی مهندسی کامپیوتر</span
+                    ><span class="en">B.Sc. Computer Engineering</span>
+                  </h3>
+                  <p>
+                    <span class="fa"
+                      >دانشگاه کاشان، کاشان، اصفهان، ایران · اکتبر ۲۰۲۴
+                      تاکنون</span
+                    ><span class="en"
+                      >University of Kashan, Kashan, Isfahan, Iran · October
+                      2024 – Present</span
+                    >
+                  </p>
+                  <div class="prog" role="img" aria-label="in progress">
+                    <i></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <ul class="fa">
-            <li>توسعه یک بازی استراتژیک با الهام از دنیای Game of Thrones با استفاده از Java.</li>
-            <li>به‌کارگیری اصول برنامه‌نویسی شی‌گرا (OOP) برای ساختاردهی سیستم بازی.</li>
-            <li>پیاده‌سازی سیستم‌های مربوط به پادشاهی‌ها، ساختمان‌ها، منابع، ارتش‌ها، مأموریت‌ها، آموزش، نبرد و رویدادهای بازی.</li>
-            <li>طراحی تعامل میان اجزای بازی و مدیریت منطق وضعیت بازی.</li>
-          </ul>
-          <ul class="en">
-            <li>Developed a strategy game inspired by the Game of Thrones universe using Java.</li>
-            <li>Applied Object-Oriented Programming principles to structure the game system.</li>
-            <li>Implemented systems for kingdoms, buildings, resources, armies, missions, training, combat, and game events.</li>
-            <li>Designed interactions between game components and managed game-state logic.</li>
-          </ul>
-        </article>
+        </div>
+      </section>
 
-        <article class="card">
-          <div>
-            <div class="meta mono"><span class="fa">پروژه دانشگاهی · ژوئن ۲۰۲۵</span><span class="en">UNIVERSITY PROJECT · JUNE 2025</span></div>
-            <h3><span class="fa">سیستم مدیریت کتابخانه</span><span class="en">Library Management System</span></h3>
-            <div class="chips"><span class="chip">C</span><span class="chip">File I/O</span></div>
+      <section class="s" id="projects">
+        <div class="wrap">
+          <div class="sh">
+            <h2>
+              <span class="fa">پروژه‌ها</span><span class="en">Projects</span>
+            </h2>
+            <span class="mono">02 / work</span>
           </div>
-          <ul class="fa">
-            <li>توسعه سیستم مدیریت کتابخانه برای ثبت، ویرایش و جستجوی کتاب‌ها و اعضا.</li>
-            <li>پیاده‌سازی فرایند امانت و بازگرداندن کتاب، تاریخ سررسید و مدیریت وضعیت فعلی.</li>
-            <li>استفاده از ورودی/خروجی فایل (File I/O) برای ذخیره‌سازی پایدار داده‌ها.</li>
-          </ul>
-          <ul class="en">
-            <li>Developed a library management system for registering, editing, and searching books and members.</li>
-            <li>Implemented book borrowing, returns, due dates, and current-status management.</li>
-            <li>Used file I/O for persistent data storage.</li>
-          </ul>
-        </article>
+          <div class="proj">
+            <article class="card">
+              <div>
+                <div class="meta mono">
+                  <span class="fa">اپلیکیشن وب پیشرو (PWA) · پروژه شخصی</span
+                  ><span class="en"
+                    >PROGRESSIVE WEB APP (PWA) · PERSONAL PROJECT</span
+                  >
+                </div>
+                <h3>
+                  <a
+                    class="stretch"
+                    href="https://elysium-uni.netlify.app"
+                    target="_blank"
+                    rel="noopener"
+                    >Elysium Universe</a
+                  >
+                </h3>
+                <div class="chips">
+                  <span class="chip">PWA</span
+                  ><span class="chip">AI Chatbot</span
+                  ><span class="chip">Smart Recommendations</span
+                  ><span class="chip">HTML</span><span class="chip">CSS</span
+                  ><span class="chip">JavaScript</span
+                  ><span class="chip">JSON</span
+                  ><span class="chip">Telegram Bot</span
+                  ><span class="chip">Git / GitHub</span>
+                </div>
+                <div class="visit mono">elysium-uni.netlify.app ↗</div>
+              </div>
+              <ul class="fa">
+                <li>
+                  توسعه یک اپلیکیشن وب پیشرو (PWA) تعاملی با چندین بخش و قابلیت
+                  مستقل، قابل نصب روی دستگاه کاربر و قابل استفاده مانند یک
+                  اپلیکیشن بومی.
+                </li>
+                <li>
+                  پیاده‌سازی احراز هویت کاربر، مدیریت پروفایل، نامه‌ها، خاطرات،
+                  موسیقی، رویدادها، شمارنده‌های معکوس و محتوای تعاملی.
+                </li>
+                <li>
+                  ایجاد تعامل‌های پویا سمت کاربر، استفاده از Local Storage،
+                  ارسال درخواست‌های API و به‌روزرسانی رابط کاربری با JavaScript.
+                </li>
+                <li>
+                  یکپارچه‌سازی برنامه با ربات تلگرام و کار با داده‌های مبتنی بر
+                  JSON و ارتباط از طریق API.
+                </li>
+                <li>
+                  افزودن قابلیت‌های هوش مصنوعی (AI) شامل چت‌بات و سیستم پیشنهاد
+                  هوشمند به اپلیکیشن.
+                </li>
+              </ul>
+              <ul class="en">
+                <li>
+                  Developed an interactive Progressive Web App (PWA) with
+                  multiple independent sections and features, installable on the
+                  user's device and usable like a native application.
+                </li>
+                <li>
+                  Implemented user authentication, profile management, letters,
+                  memories, music, events, countdowns, and interactive content.
+                </li>
+                <li>
+                  Built dynamic client-side interactions, local storage usage,
+                  API requests, and UI updates with JavaScript.
+                </li>
+                <li>
+                  Integrated the application with a Telegram Bot and worked with
+                  JSON-based data and API communication.
+                </li>
+                <li>
+                  Added artificial intelligence (AI) capabilities to the
+                  application, including a chatbot and smart recommendations.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div>
+                <div class="meta mono">
+                  <span class="fa">پروژه دسکتاپ · سپتامبر ۲۰۲۵</span
+                  ><span class="en">DESKTOP GAME · SEPTEMBER 2025</span>
+                </div>
+                <h3>
+                  <a
+                    class="stretch"
+                    href="https://github.com/mmatvakili-lgtm/GOT"
+                    target="_blank"
+                    rel="noopener"
+                    ><span class="fa">بازی استراتژیک Game of Thrones</span
+                    ><span class="en">Game of Thrones Strategy Game</span></a
+                  >
+                </h3>
+                <div class="chips">
+                  <span class="chip">Java</span>
+                  <span class="chip">libGDX</span>
+                  <span class="chip">OOP</span>
+                  <span class="chip">Mediator Pattern</span>
+                  <span class="chip">Desktop Game</span>
+                </div>
+                <div class="visit mono">github.com/mmatvakili-lgtm/GOT ↗</div>
+              </div>
+              <ul class="fa">
+                <li>
+                  توسعه بازی استراتژیک دسکتاپ با زبان Java و موتور گرافیکی
+                  libGDX بر بستر معماری چندماژولار Gradle[cite: 1, 2].
+                </li>
+                <li>
+                  پیاده‌سازی الگوی طراحی Mediator برای تفکیک کامل لایه‌های منطقی
+                  بازی، رابط کاربری و رندر تایل‌ها[cite: 1].
+                </li>
+                <li>
+                  طراحی سیستم جامع مدیریت منابع، قلمروها، بازار تبادل، آموزش
+                  ارتش و حملات فصلی وایت‌واکرها[cite: 1, 2].
+                </li>
+                <li>
+                  پیاده‌سازی سیستم ثبت وقایع نبرد و بازپخش زنده رویدادهای جنگی
+                  (Battle Replay)[cite: 1].
+                </li>
+              </ul>
+              <ul class="en">
+                <li>
+                  Developed a desktop strategy game using Java and the libGDX
+                  framework with a modular Gradle architecture[cite: 1, 2].
+                </li>
+                <li>
+                  Implemented the Mediator design pattern to decouple game
+                  logic, UI screens, and tile rendering[cite: 1].
+                </li>
+                <li>
+                  Engineered kingdom economics, resource management, troop
+                  recruitment, and dynamic White Walker invasions[cite: 1, 2].
+                </li>
+                <li>
+                  Built custom battle logging and real-time combat replay
+                  mechanisms[cite: 1].
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div>
+                <div class="meta mono">
+                  <span class="fa">پروژه دانشگاهی · ژوئن ۲۰۲۵</span
+                  ><span class="en">UNIVERSITY PROJECT · JUNE 2025</span>
+                </div>
+                <h3>
+                  <span class="fa">سیستم مدیریت کتابخانه</span
+                  ><span class="en">Library Management System</span>
+                </h3>
+                <div class="chips">
+                  <span class="chip">C</span><span class="chip">File I/O</span>
+                </div>
+              </div>
+              <ul class="fa">
+                <li>
+                  توسعه سیستم مدیریت کتابخانه برای ثبت، ویرایش و جستجوی کتاب‌ها
+                  و اعضا.
+                </li>
+                <li>
+                  پیاده‌سازی فرایند امانت و بازگرداندن کتاب، تاریخ سررسید و
+                  مدیریت وضعیت فعلی.
+                </li>
+                <li>
+                  استفاده از ورودی/خروجی فایل (File I/O) برای ذخیره‌سازی پایدار
+                  داده‌ها.
+                </li>
+              </ul>
+              <ul class="en">
+                <li>
+                  Developed a library management system for registering,
+                  editing, and searching books and members.
+                </li>
+                <li>
+                  Implemented book borrowing, returns, due dates, and
+                  current-status management.
+                </li>
+                <li>Used file I/O for persistent data storage.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="s" id="skills">
+        <div class="wrap">
+          <div class="sh">
+            <h2>
+              <span class="fa">مهارت‌ها</span><span class="en">Skills</span>
+            </h2>
+            <span class="mono">03 / skills</span>
+          </div>
+          <div class="skills">
+            <div class="grp">
+              <h3>
+                <span class="fa">برنامه‌نویسی</span
+                ><span class="en">Programming</span>
+              </h3>
+              <div class="chips">
+                <span class="chip">Java</span><span class="chip">Python</span
+                ><span class="chip">C</span><span class="chip">JavaScript</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3><span class="fa">وب</span><span class="en">Web</span></h3>
+              <div class="chips">
+                <span class="chip">HTML</span><span class="chip">CSS</span
+                ><span class="chip">JavaScript</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">مفاهیم</span><span class="en">Concepts</span>
+              </h3>
+              <div class="chips">
+                <span class="chip fa" style="direction: rtl"
+                  >برنامه‌نویسی شی‌گرا (OOP)</span
+                ><span class="chip en">Object-Oriented Programming (OOP)</span
+                ><span class="chip fa" style="direction: rtl">حل مسئله</span
+                ><span class="chip en">Problem solving</span
+                ><span class="chip fa" style="direction: rtl">الگوریتم</span
+                ><span class="chip en">Algorithms</span
+                ><span class="chip fa" style="direction: rtl">ساختمان داده</span
+                ><span class="chip en">Data structures</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">ابزارها</span><span class="en">Tools</span>
+              </h3>
+              <div class="chips">
+                <span class="chip">Git</span><span class="chip">GitHub</span
+                ><span class="chip">JSON</span
+                ><span class="chip">API Integration</span
+                ><span class="chip">Telegram Bot</span
+                ><span class="chip">AI Integration</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">دوره‌ها</span><span class="en">Courses</span>
+              </h3>
+              <div class="row">
+                <span class="fa">دوره جامع Python، جادی، مکتب‌خونه</span
+                ><span class="en"
+                  >Comprehensive Python Course, Jadi, Maktabkhooneh</span
+                ><span class="fa">تکمیل‌شده</span
+                ><span class="en">Completed</span>
+              </div>
+              <div class="row">
+                <span class="fa">یادگیری ماشین با Python، جادی، مکتب‌خونه</span
+                ><span class="en"
+                  >Machine Learning with Python, Jadi, Maktabkhooneh</span
+                ><span class="fa">در حال انجام</span
+                ><span class="en">In Progress</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">زبان‌ها</span><span class="en">Languages</span>
+              </h3>
+              <div class="row">
+                <span class="fa">فارسی</span><span class="en">Persian</span
+                ><span class="fa">زبان مادری</span
+                ><span class="en">Native</span>
+              </div>
+              <div class="row">
+                <span class="fa">انگلیسی</span><span class="en">English</span
+                ><span class="fa">متوسط</span
+                ><span class="en">Intermediate</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">مهارت‌های نرم</span
+                ><span class="en">Soft Skills</span>
+              </h3>
+              <div class="chips">
+                <span class="chip fa" style="direction: rtl">حل مسئله</span
+                ><span class="chip fa" style="direction: rtl">کار تیمی</span
+                ><span class="chip fa" style="direction: rtl"
+                  >مسئولیت‌پذیری</span
+                ><span class="chip fa" style="direction: rtl">وفق‌پذیری</span
+                ><span class="chip fa" style="direction: rtl"
+                  >یادگیری مستقل</span
+                >
+                <span class="chip en">Problem Solving</span
+                ><span class="chip en">Teamwork</span
+                ><span class="chip en">Responsibility</span
+                ><span class="chip en">Adaptability</span
+                ><span class="chip en">Self-Learning</span>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>
+                <span class="fa">علایق</span><span class="en">Interests</span>
+              </h3>
+              <div class="chips">
+                <span class="chip fa" style="direction: rtl"
+                  >توسعه نرم‌افزار</span
+                ><span class="chip fa" style="direction: rtl"
+                  >توسعه Python و بک‌اند</span
+                ><span class="chip fa" style="direction: rtl"
+                  >یادگیری ماشین</span
+                ><span class="chip fa" style="direction: rtl"
+                  >فناوری‌های وب</span
+                ><span class="chip fa" style="direction: rtl">الگوریتم‌ها</span>
+                <span class="chip en">Software Development</span
+                ><span class="chip en">Python &amp; Backend Development</span
+                ><span class="chip en">Machine Learning</span
+                ><span class="chip en">Web Technologies</span
+                ><span class="chip en">Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s" id="contact">
+        <div class="wrap">
+          <div class="sh">
+            <h2><span class="fa">تماس</span><span class="en">Contact</span></h2>
+            <span class="mono">04 / hello</span>
+          </div>
+          <div class="contact">
+            <div class="ct">
+              <small>Email</small
+              ><span class="v" id="mail">m.mat.vakili@gmail.com</span
+              ><button type="button" data-copy="#mail">
+                <span class="fa">کپی</span><span class="en">Copy</span>
+              </button>
+            </div>
+            <div class="ct">
+              <small>GitHub</small
+              ><a
+                href="https://github.com/mmatvakili-lgtm"
+                target="_blank"
+                rel="noopener"
+                >github.com/mmatvakili-lgtm ↗</a
+              >
+            </div>
+            <div class="ct">
+              <small
+                ><span class="fa">تلفن</span
+                ><span class="en">Phone</span></small
+              ><span class="v" id="tel">+98 933 360 1604</span
+              ><button type="button" data-copy="#tel">
+                <span class="fa">کپی</span><span class="en">Copy</span>
+              </button>
+            </div>
+            <div class="ct">
+              <small
+                ><span class="fa">مکان</span
+                ><span class="en">Location</span></small
+              ><span class="fa" style="display: block"
+                >کاشان، اصفهان، ایران</span
+              ><span class="en" style="display: block"
+                >Kashan, Isfahan, Iran</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© 2026 Mohammad Matin Vakili</span
+        ><span class="fa">دانشگاه کاشان، مهندسی کامپیوتر</span
+        ><span class="en">Computer Engineering, University of Kashan</span>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="s" id="skills">
-    <div class="wrap">
-      <div class="sh"><h2><span class="fa">مهارت‌ها</span><span class="en">Skills</span></h2><span class="mono">03 / skills</span></div>
-      <div class="skills">
-        <div class="grp"><h3><span class="fa">برنامه‌نویسی</span><span class="en">Programming</span></h3>
-          <div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">JavaScript</span></div></div>
-        <div class="grp"><h3><span class="fa">وب</span><span class="en">Web</span></h3>
-          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div></div>
-        <div class="grp"><h3><span class="fa">مفاهیم</span><span class="en">Concepts</span></h3>
-          <div class="chips"><span class="chip fa" style="direction:rtl">برنامه‌نویسی شی‌گرا (OOP)</span><span class="chip en">Object-Oriented Programming (OOP)</span><span class="chip fa" style="direction:rtl">حل مسئله</span><span class="chip en">Problem solving</span><span class="chip fa" style="direction:rtl">الگوریتم</span><span class="chip en">Algorithms</span><span class="chip fa" style="direction:rtl">ساختمان داده</span><span class="chip en">Data structures</span></div></div>
-        <div class="grp"><h3><span class="fa">ابزارها</span><span class="en">Tools</span></h3>
-          <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">JSON</span><span class="chip">API Integration</span><span class="chip">Telegram Bot</span><span class="chip">AI Integration</span></div></div>
-        <div class="grp"><h3><span class="fa">دوره‌ها</span><span class="en">Courses</span></h3>
-          <div class="row"><span class="fa">دوره جامع Python، جادی، مکتب‌خونه</span><span class="en">Comprehensive Python Course, Jadi, Maktabkhooneh</span><span class="fa">تکمیل‌شده</span><span class="en">Completed</span></div>
-          <div class="row"><span class="fa">یادگیری ماشین با Python، جادی، مکتب‌خونه</span><span class="en">Machine Learning with Python, Jadi, Maktabkhooneh</span><span class="fa">در حال انجام</span><span class="en">In Progress</span></div>
-        </div>
-        <div class="grp"><h3><span class="fa">زبان‌ها</span><span class="en">Languages</span></h3>
-          <div class="row"><span class="fa">فارسی</span><span class="en">Persian</span><span class="fa">زبان مادری</span><span class="en">Native</span></div>
-          <div class="row"><span class="fa">انگلیسی</span><span class="en">English</span><span class="fa">متوسط</span><span class="en">Intermediate</span></div>
-        </div>
-        <div class="grp"><h3><span class="fa">مهارت‌های نرم</span><span class="en">Soft Skills</span></h3>
-          <div class="chips"><span class="chip fa" style="direction:rtl">حل مسئله</span><span class="chip fa" style="direction:rtl">کار تیمی</span><span class="chip fa" style="direction:rtl">مسئولیت‌پذیری</span><span class="chip fa" style="direction:rtl">وفق‌پذیری</span><span class="chip fa" style="direction:rtl">یادگیری مستقل</span>
-            <span class="chip en">Problem Solving</span><span class="chip en">Teamwork</span><span class="chip en">Responsibility</span><span class="chip en">Adaptability</span><span class="chip en">Self-Learning</span></div>
-        </div>
-        <div class="grp"><h3><span class="fa">علایق</span><span class="en">Interests</span></h3>
-          <div class="chips"><span class="chip fa" style="direction:rtl">توسعه نرم‌افزار</span><span class="chip fa" style="direction:rtl">توسعه Python و بک‌اند</span><span class="chip fa" style="direction:rtl">یادگیری ماشین</span><span class="chip fa" style="direction:rtl">فناوری‌های وب</span><span class="chip fa" style="direction:rtl">الگوریتم‌ها</span>
-            <span class="chip en">Software Development</span><span class="chip en">Python &amp; Backend Development</span><span class="chip en">Machine Learning</span><span class="chip en">Web Technologies</span><span class="chip en">Algorithms</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        function store(k, v) {
+          try {
+            if (v === undefined) return localStorage.getItem(k);
+            localStorage.setItem(k, v);
+          } catch (e) {
+            return null;
+          }
+        }
+        function setLang(l) {
+          root.setAttribute("data-lang", l);
+          root.lang = l;
+          root.dir = l === "fa" ? "rtl" : "ltr";
+          document.title = l === "fa" ? "متین وکیلی" : "Matin Vakili";
+          store("mv-lang", l);
+        }
+        setLang(store("mv-lang") === "en" ? "en" : "fa");
+        document.getElementById("lang").addEventListener("click", function () {
+          setLang(root.getAttribute("data-lang") === "fa" ? "en" : "fa");
+        });
+        document.getElementById("theme").addEventListener("click", function () {
+          var dark = root.getAttribute("data-theme")
+            ? root.getAttribute("data-theme") === "dark"
+            : matchMedia("(prefers-color-scheme:dark)").matches;
+          root.setAttribute("data-theme", dark ? "light" : "dark");
+        });
+        document.querySelectorAll("[data-copy]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var el = document.querySelector(b.getAttribute("data-copy")),
+              txt = el.textContent,
+              old = b.innerHTML;
+            var done = function () {
+              b.textContent = "✓";
+              setTimeout(function () {
+                b.innerHTML = old;
+              }, 1200);
+            };
+            var fallback = function () {
+              var r = document.createRange();
+              r.selectNodeContents(el);
+              var s = getSelection();
+              s.removeAllRanges();
+              s.addRange(r);
+            };
+            try {
+              navigator.clipboard.writeText(txt).then(done, fallback);
+            } catch (e) {
+              fallback();
+            }
+          });
+        });
 
-  <section class="s" id="contact">
-    <div class="wrap">
-      <div class="sh"><h2><span class="fa">تماس</span><span class="en">Contact</span></h2><span class="mono">04 / hello</span></div>
-      <div class="contact">
-        <div class="ct"><small>Email</small><span class="v" id="mail">m.mat.vakili@gmail.com</span><button type="button" data-copy="#mail"><span class="fa">کپی</span><span class="en">Copy</span></button></div>
-        <div class="ct"><small>GitHub</small><a href="https://github.com/mmatvakili-lgtm" target="_blank" rel="noopener">github.com/mmatvakili-lgtm ↗</a></div>
-        <div class="ct"><small><span class="fa">تلفن</span><span class="en">Phone</span></small><span class="v" id="tel">+98 933 360 1604</span><button type="button" data-copy="#tel"><span class="fa">کپی</span><span class="en">Copy</span></button></div>
-        <div class="ct"><small><span class="fa">مکان</span><span class="en">Location</span></small><span class="fa" style="display:block">کاشان، اصفهان، ایران</span><span class="en" style="display:block">Kashan, Isfahan, Iran</span></div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer><div class="wrap"><span>© 2026 Mohammad Matin Vakili</span><span class="fa">دانشگاه کاشان، مهندسی کامپیوتر</span><span class="en">Computer Engineering, University of Kashan</span></div></footer>
-
-<script>
-(function(){
-  var root=document.documentElement;
-  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
-  function setLang(l){
-    root.setAttribute('data-lang',l);root.lang=l;root.dir=l==='fa'?'rtl':'ltr';
-    document.title=l==='fa'?'متین وکیلی':'Matin Vakili';
-    store('mv-lang',l);
-  }
-  setLang(store('mv-lang')==='en'?'en':'fa');
-  document.getElementById('lang').addEventListener('click',function(){setLang(root.getAttribute('data-lang')==='fa'?'en':'fa')});
-  document.getElementById('theme').addEventListener('click',function(){
-    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
-    root.setAttribute('data-theme',dark?'light':'dark');
-  });
-  document.querySelectorAll('[data-copy]').forEach(function(b){
-    b.addEventListener('click',function(){
-      var el=document.querySelector(b.getAttribute('data-copy')),txt=el.textContent,old=b.innerHTML;
-      var done=function(){b.textContent='✓';setTimeout(function(){b.innerHTML=old},1200)};
-      var fallback=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)};
-      try{navigator.clipboard.writeText(txt).then(done,fallback)}catch(e){fallback()}
-    });
-  });
-
-  /* girih-style eight-point star lattice that turns toward the pointer */
-  var cv=document.getElementById('lattice'),ctx=cv.getContext('2d'),W=0,H=0,dpr=1,mx=-999,my=-999,raf=0,visible=true;
-  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,CELL=72;
-  function size(){var r=cv.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);draw(performance.now())}
-  function sq(cx,cy,r,a){ctx.beginPath();for(var i=0;i<4;i++){var t=a+i*Math.PI/2+Math.PI/4;var x=cx+Math.cos(t)*r,y=cy+Math.sin(t)*r;i?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.closePath();ctx.stroke()}
-  function draw(now){
-    ctx.clearRect(0,0,W,H);
-    var col=getComputedStyle(root).getPropertyValue('--tile').trim()||'#067a82';
-    ctx.strokeStyle=col;ctx.lineWidth=1.2;
-    var cols=Math.ceil(W/CELL)+1,rows=Math.ceil(H/CELL)+1,t=reduce?0:now/4000;
-    for(var j=0;j<rows;j++)for(var i=0;i<cols;i++){
-      var cx=i*CELL+(j%2?CELL/2:0),cy=j*CELL*.86;
-      var d=Math.hypot(cx-mx,cy-my),inf=Math.max(0,1-d/260);
-      ctx.globalAlpha=.09+.55*inf*inf;
-      var a=t+inf*1.1+(i+j)*.05;
-      sq(cx,cy,CELL*.36,a);sq(cx,cy,CELL*.36,a+Math.PI/4);
-      if(inf>.25){ctx.beginPath();ctx.arc(cx,cy,3+inf*3,0,7);ctx.globalAlpha=inf;ctx.stroke()}
-    }
-    ctx.globalAlpha=1;
-  }
-  function loop(now){draw(now);raf=visible&&!reduce?requestAnimationFrame(loop):0}
-  function start(){if(!raf&&!reduce)raf=requestAnimationFrame(loop)}
-  var hero=cv.parentElement;
-  hero.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;if(reduce)draw(0)});
-  hero.addEventListener('pointerleave',function(){mx=my=-999;if(reduce)draw(0)});
-  if('IntersectionObserver' in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)start()}).observe(hero);
-  addEventListener('resize',size);size();start();
-  new MutationObserver(function(){draw(performance.now())}).observe(root,{attributes:true,attributeFilter:['data-theme']});
-})();
-</script>
-
-</body>
+        /* girih-style eight-point star lattice that turns toward the pointer */
+        var cv = document.getElementById("lattice"),
+          ctx = cv.getContext("2d"),
+          W = 0,
+          H = 0,
+          dpr = 1,
+          mx = -999,
+          my = -999,
+          raf = 0,
+          visible = true;
+        var reduce = matchMedia("(prefers-reduced-motion:reduce)").matches,
+          CELL = 72;
+        function size() {
+          var r = cv.getBoundingClientRect();
+          dpr = Math.min(devicePixelRatio || 1, 2);
+          W = r.width;
+          H = r.height;
+          cv.width = W * dpr;
+          cv.height = H * dpr;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          draw(performance.now());
+        }
+        function sq(cx, cy, r, a) {
+          ctx.beginPath();
+          for (var i = 0; i < 4; i++) {
+            var t = a + (i * Math.PI) / 2 + Math.PI / 4;
+            var x = cx + Math.cos(t) * r,
+              y = cy + Math.sin(t) * r;
+            i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+          }
+          ctx.closePath();
+          ctx.stroke();
+        }
+        function draw(now) {
+          ctx.clearRect(0, 0, W, H);
+          var col =
+            getComputedStyle(root).getPropertyValue("--tile").trim() ||
+            "#067a82";
+          ctx.strokeStyle = col;
+          ctx.lineWidth = 1.2;
+          var cols = Math.ceil(W / CELL) + 1,
+            rows = Math.ceil(H / CELL) + 1,
+            t = reduce ? 0 : now / 4000;
+          for (var j = 0; j < rows; j++)
+            for (var i = 0; i < cols; i++) {
+              var cx = i * CELL + (j % 2 ? CELL / 2 : 0),
+                cy = j * CELL * 0.86;
+              var d = Math.hypot(cx - mx, cy - my),
+                inf = Math.max(0, 1 - d / 260);
+              ctx.globalAlpha = 0.09 + 0.55 * inf * inf;
+              var a = t + inf * 1.1 + (i + j) * 0.05;
+              sq(cx, cy, CELL * 0.36, a);
+              sq(cx, cy, CELL * 0.36, a + Math.PI / 4);
+              if (inf > 0.25) {
+                ctx.beginPath();
+                ctx.arc(cx, cy, 3 + inf * 3, 0, 7);
+                ctx.globalAlpha = inf;
+                ctx.stroke();
+              }
+            }
+          ctx.globalAlpha = 1;
+        }
+        function loop(now) {
+          draw(now);
+          raf = visible && !reduce ? requestAnimationFrame(loop) : 0;
+        }
+        function start() {
+          if (!raf && !reduce) raf = requestAnimationFrame(loop);
+        }
+        var hero = cv.parentElement;
+        hero.addEventListener("pointermove", function (e) {
+          var r = cv.getBoundingClientRect();
+          mx = e.clientX - r.left;
+          my = e.clientY - r.top;
+          if (reduce) draw(0);
+        });
+        hero.addEventListener("pointerleave", function () {
+          mx = my = -999;
+          if (reduce) draw(0);
+        });
+        if ("IntersectionObserver" in window)
+          new IntersectionObserver(function (es) {
+            visible = es[0].isIntersecting;
+            if (visible) start();
+          }).observe(hero);
+        addEventListener("resize", size);
+        size();
+        start();
+        new MutationObserver(function () {
+          draw(performance.now());
+        }).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+      })();
+    </script>
+  </body>
 </html>
